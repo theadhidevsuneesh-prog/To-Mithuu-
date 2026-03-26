@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Madam Ji ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f5efe6;
+    background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+}
+
+/* Page wrapper */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+/* Box */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border: 6px double maroon;
+    background: #fff8f0;
+    border-radius: 20px;
+    text-align: center;
+    color: maroon;
+    position: relative;
+}
+
+/* Text */
+h1 {
+    font-size: 18px;
+    line-height: 1.7;
+    word-wrap: break-word;
+    white-space: pre-line;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    background: #ffc0cb;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Signature */
+.signature {
+    margin-top: 20px;
+    font-family: "Brush Script MT", cursive;
+    font-size: 18px;
+}
+
+/* Hide pages */
+.hidden {
+    display: none;
+}
+
+/* Rain */
+.rain {
+    position: fixed;
+    top: -20px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
+</audio>
+
+<div class="wrapper">
+
+<!-- PAGE 1 -->
+<div class="container" id="p1">
+<h1>MADAMM JII....
+DO YOU WISH TO CONTINUE</h1>
+<button class="btn" onclick="go(2)">Continue</button>
+<button class="btn" onclick="exitPage()">Exit</button>
+<div class="signature">To Ridhika 💋</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="container hidden" id="p2">
+<h1 id="text2">
+MADAM JII I KNOW IM NOT THE BEST GUY YOU COULD FIND BUT YOU ARE THE BEST I COULD EVER FIND🥹.
+MADAM JI, I DON’T BELIEVE IN LOVE AT FIRST SIGHT.
+I JUST THOUGHT THAT GIRL LOOKS KIND OF PAAVAM🫣.
+BY THE TIME I REALIZED IT, I STARTED LIKING YOU A LOT.
+MUJHE LAGTA DHA KII MEE KABHI AAPKE PAAS NAHI AA PAUNGA😭.
+MEE AAPKE SATH DAYDREAM KARTHA DHA.
+BUT AAPNE MUJHE PAKAD LIYAA🥹.
+AB ME BOHT KHUSH HUUU🫠💋.
+</h1>
+<button class="btn" onclick="go(3)">Continue</button>
+<div class="signature">To Ridhika 💋</div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="container hidden" id="p3">
+<h1>
+ME ABHI MERE BEST ME NAHI HUU😭.
+DIKHNE ME BHI UGLY HUU😭.
+BODY BHI NAHI HEIII😭.
+BUT AGAR AAP MERE SATH HOO TOH MEE SAB KAR LUNGA😭.
+AGAR MERE LIYE NAHI TOH AAPKE LIYE😭.
+TOHH ME AAPSE PUCHNA CHAHTA THA🫣...
+</h1>
+<button class="btn" onclick="go(4)">Continue</button>
+<div class="signature">To Ridhika 💋</div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="container hidden" id="p4">
+<h1>
+WILL YOU BE MY GIRLFRIEND ❤️
+(MY EVERYTHING, MY MOTIVATION, MY LOVE)
+</h1>
+<button class="btn" onclick="yes()">YES</button>
+<button class="btn" id="noBtn">NO</button>
+<div class="signature">To Ridhika 💋</div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="container hidden" id="p5">
+<h1>
+🥹THANK YOU FOR CHOOSING ME😭😭.
+ME VAADA KARTHA HUU KI HAMESHA AAPKE SATH RAHUNGA ❤️.
+</h1>
+<button class="btn" onclick="go(6)">Continue</button>
+<div class="signature">To Ridhika 💋</div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="container hidden" id="p6">
+<h1>
+ME AAPKO SABKUCH DILANA CHAHTA HUU😭.
+EK DIN AAPKO SAB KUCH DILAUNGA ❤️.
+MEE BHI WO KASHMIRI CHUDIYO
+WAALA REEL PE AAPKI LIKE DEKHTA 
+HUU😭.JAB HUM SATH HONGE 
+MERE PESO SE AAPKO SAB KUCH
+DILAUNGA💋
+</h1>
+<button class="btn" onclick="go(7)">Continue</button>
+<div class="signature">To Ridhika 💋</div>
+</div>
+
+<!-- PAGE 7 -->
+<div class="container hidden" id="p7">
+<h1>
+ENI ONNUM ILLA😝
+POYI ENJOY CHEY😝
+EXAMS KHATAM 😤
+MUJHE JALDI TEXT KAROO 😤
+</h1>
+<div class="signature">To Ridhika 💋</div>
+</div>
+
+</div>
+
+<script>
+function go(page) {
+    document.querySelectorAll(".container").forEach(e => e.classList.add("hidden"));
+    document.getElementById("p" + page).classList.remove("hidden");
+}
+
+function exitPage() {
+    go(2);
+    document.getElementById("text2").innerText = "PODI PATTI😡 CONTINUE KODUKK🥹";
+}
+
+/* NO BUTTON */
+setTimeout(() => {
+    let noBtn = document.getElementById("noBtn");
+    if(noBtn){
+        noBtn.addEventListener("mouseover", () => {
+            noBtn.style.position = "absolute";
+            noBtn.style.top = Math.random() * 80 + "%";
+            noBtn.style.left = Math.random() * 80 + "%";
+        });
+    }
+}, 300);
+
+/* RAIN FIXED */
+function yes() {
+    go(5);
+    rain();
+}
+
+function rain() {
+    const emojis = ["💋","🦋","🌹","🌷","💐","🌸","🌺","💎","❤️","💗","💓"];
+    for (let i = 0; i < 50; i++) {
+        let el = document.createElement("div");
+        el.className = "rain";
+        el.innerText = emojis[Math.floor(Math.random()*emojis.length)];
+        el.style.left = Math.random() * 100 + "vw";
+        el.style.animationDuration = (2 + Math.random()*3) + "s";
+        el.style.fontSize = (18 + Math.random()*10) + "px";
+
+        document.body.appendChild(el);
+
+        setTimeout(() => el.remove(), 5000);
+    }
+}
+</script>
+
+</body>
+</html>
